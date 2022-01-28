@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    tools:context=".fragments.SignUpFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/closeBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="36dp"
+        android:src="@drawable/close_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/logInTv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="LogIn"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orTv2"
+        tools:ignore="HardCodedText" />
+
+    <TextView
+        android:id="@+id/orTv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="OR"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpBtn"
+        tools:ignore="HardCodedText" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <EditText
+        android:id="@+id/fullNameEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/emailEt2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Email Id"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/fullNameEt"
+        app:layout_constraintStart_toStartOf="@+id/fullNameEt"
+        app:layout_constraintTop_toBottomOf="@+id/fullNameEt"
+        android:importantForAutofill="no"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/phoneEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/fullNameEt"
+        app:layout_constraintStart_toStartOf="@+id/fullNameEt"
+        app:layout_constraintTop_toBottomOf="@+id/emailEt2"
+        android:importantForAutofill="no"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/passEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Type Password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/fullNameEt"
+        app:layout_constraintStart_toStartOf="@+id/fullNameEt"
+        app:layout_constraintTop_toBottomOf="@+id/phoneEt"
+        android:importantForAutofill="no"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/cnfPassEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/fullNameEt"
+        app:layout_constraintStart_toStartOf="@+id/fullNameEt"
+        app:layout_constraintTop_toBottomOf="@+id/passEt"
+        android:importantForAutofill="no"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/white"
+        android:text="Sign Up"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cnfPassEt"
+        tools:ignore="HardCodedText" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="130dp"
+        android:layout_height="1dp"
+
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="@+id/orTv2"
+        app:layout_constraintEnd_toStartOf="@+id/orTv2"
+        app:layout_constraintTop_toTopOf="@+id/orTv2" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="130dp"
+        android:layout_height="1dp"
+
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="@+id/orTv2"
+        app:layout_constraintStart_toEndOf="@+id/orTv2"
+        app:layout_constraintTop_toTopOf="@+id/orTv2" />
+
+    <ProgressBar
+        android:id="@+id/progBar"
+        android:layout_width="32dp"
+        android:visibility="invisible"
+        android:layout_height="32dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:indeterminateTint="@color/colorPrimary"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/signUpBtn"
+        app:layout_constraintEnd_toEndOf="@+id/signUpBtn"
+        app:layout_constraintStart_toStartOf="@+id/signUpBtn"
+        app:layout_constraintTop_toTopOf="@+id/signUpBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

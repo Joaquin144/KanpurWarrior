@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home_icon_img"
+        android:title="Home" />
+    <item
+        android:id="@+id/itemTitle"
+        android:title="Purchased Products"
+
+        >
+        <menu>
+            <item
+                android:id="@+id/nav_myCourses"
+                android:icon="@drawable/my_courses_icon_image"
+                android:title="My Courses"
+                tools:ignore="HardcodedText" />
+            <item
+                android:id="@+id/nav_mynotes"
+                android:icon="@drawable/notes_icon_image"
+                android:title="My Notes"
+                tools:ignore="HardcodedText" />
+            <item
+                android:id="@+id/nav_mytests"
+                android:icon="@drawable/test_icon_image"
+                android:title="My Tests"
+                tools:ignore="HardcodedText" />
+            <item
+                android:id="@+id/nav_myaccount"
+                android:icon="@drawable/account_icon_image"
+                android:title="Account"
+                tools:ignore="HardcodedText" />
+            <item
+                android:id="@+id/nav_notification"
+                android:icon="@drawable/notification_icon_image"
+                android:title="Notifications"
+                tools:ignore="HardcodedText" />
+
+        </menu>
+    </item>
+    <group android:id="@+id/group_divider">
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/share_icon_image"
+            android:title="Share this App"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/support_icon_image"
+            android:title="Helpline"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_youtube"
+            android:icon="@drawable/youtube_icon_image"
+            android:title="YouTube Channel"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_telegram"
+            android:icon="@drawable/telegram_icon_image"
+            android:title="Join Telegram"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/info_icon_image"
+            android:title="About Us"
+            tools:ignore="HardcodedText" />
+    </group>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/sign_out_icon_image"
+            android:title="Log Out"
+            tools:ignore="HardcodedText" />
+
+
+</menu>

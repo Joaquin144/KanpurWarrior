@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="24dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/idItemViewAllIV"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/idViewAllTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:text="Live test 2"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/idItemViewAllIV"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/idViewAllSubtitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="PDF Download"
+        app:layout_constraintEnd_toEndOf="@+id/idViewAllTitleTv"
+        app:layout_constraintStart_toStartOf="@+id/idViewAllTitleTv"
+        app:layout_constraintTop_toBottomOf="@+id/idViewAllTitleTv"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/idViewAllPriceTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FREE"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/idViewAllSubtitleTv"
+        app:layout_constraintStart_toStartOf="@+id/idViewAllSubtitleTv"
+        app:layout_constraintTop_toBottomOf="@+id/idViewAllSubtitleTv"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/idViewAllNormalPriceTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs 999/-"
+        android:layout_marginStart="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/idViewAllPriceTV"
+        app:layout_constraintStart_toEndOf="@+id/idViewAllPriceTV"
+        app:layout_constraintTop_toBottomOf="@+id/idViewAllSubtitleTv"
+        tools:ignore="HardcodedText" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

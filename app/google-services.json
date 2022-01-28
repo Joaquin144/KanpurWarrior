@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "330695313256",
+    "project_id": "kanpur-warrior",
+    "storage_bucket": "kanpur-warrior.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330695313256:android:6c225d7e750e85ceb6f8dd",
+        "android_client_info": {
+          "package_name": "com.example.kanpurwarrior"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "330695313256-1tto8ibt19lgmdqk3l6sht9nduaq62o2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARZJX9mEfVTxjR6cle1oDiN99eCwhssr4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "330695313256-1tto8ibt19lgmdqk3l6sht9nduaq62o2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

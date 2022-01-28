@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/gridParentLayout"
+    android:background="@drawable/rounded_corner_bacgkround_white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="12dp"
+    android:layout_margin="8dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/layoutTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="12dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Youtube Live"
+        android:textColor="@color/black"
+        tools:ignore="HardcodedText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/viewAllBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="View All"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridProdLayout"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        app:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutTitle">
+
+        <!-- inlclude tag se hum ek poori xml-layout file ko as a single entity treat kar sakte hain-->
+        <include layout="@layout/horizontal_product_item_layout"
+            app:layout_columnWeight="1"/>
+
+        <include layout="@layout/horizontal_product_item_layout"
+            app:layout_columnWeight="1"/>
+
+        <include layout="@layout/horizontal_product_item_layout"
+            app:layout_columnWeight="1"/>
+
+        <include layout="@layout/horizontal_product_item_layout"
+            app:layout_columnWeight="1"/>
+
+
+    </androidx.gridlayout.widget.GridLayout>
+    <!-- View likhe na ki view
+        because woh samjhega ki view is object of some class
+        whereas View is considered a class by naming conventions
+        -->
+    <View
+        android:id="@+id/view2"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#70000000"
+        app:layout_constraintBottom_toBottomOf="@id/gridParentLayout"
+        app:layout_constraintLeft_toLeftOf="@id/gridParentLayout"
+        app:layout_constraintRight_toRightOf="@id/gridParentLayout"
+        app:layout_constraintTop_toTopOf="@id/gridProdLayout" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#10000000"
+        app:layout_constraintBottom_toBottomOf="@+id/gridProdLayout"
+        app:layout_constraintLeft_toLeftOf="@id/gridProdLayout"
+        app:layout_constraintRight_toRightOf="@id/gridProdLayout"
+        app:layout_constraintTop_toTopOf="@+id/gridProdLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
