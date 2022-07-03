@@ -182,8 +182,8 @@ public class SignUpFragment extends Fragment {
                                     if(task.isSuccessful()){
                                         Map<String,Object> basicDetails = new HashMap<>();
                                         basicDetails.put("full name",fullNameEt.getText().toString());
-                                        basicDetails.put("mobile_no",mobileEt.getText().toString());
                                         basicDetails.put("email",emailEt.getText().toString());
+                                        basicDetails.put("mobile_no",mobileEt.getText().toString());
 
                                         firestore.collection("USERS").document(firebaseAuth.getUid())
                                                 .set(basicDetails).addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -198,31 +198,29 @@ public class SignUpFragment extends Fragment {
                                                     documentNames.add("MY_TESTS");
                                                     documentNames.add("MY_NOTES");
                                                     Map<String,Long> totalMap = new HashMap<>();
-                                                    totalMap.put("total",0L);//ismein L ya phir (long) 0 zaroor likh den because firebase duiniya mein long chalta hai int nahi
+                                                    totalMap.put("total",0L);//ismein L ya phir (long) 0 zaroor likh dena because firebase ki duniya mein long chalta hai int nahi
                                                     for(int i=0;i<documentNames.size();++i){
                                                         userDataReferences.document(documentNames.get(i)).set(totalMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                                                             @Override
                                                             public void onComplete(@NonNull Task<Void> task) {
                                                                 if(task.isSuccessful()){
-                                                                    
+                                                                    Toast.makeText(getContext(), "Completed", Toast.LENGTH_SHORT).show();
+                                                                    Intent intent=new Intent(getContext(),MainActivity.class);
+                                                                    getActivity().finish();
+                                                                    startActivity(intent);
+                                                                    Toast.makeText(getContext(), "Login Successful!", Toast.LENGTH_SHORT).show();
                                                                 }
                                                                 else{
-                                                                    Toast.makeText(getContext(), "Some error occured "+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                                                    firebaseAuth.signOut();
+                                                                    Toast.makeText(getContext(), "Some error occurred "+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                                                                 }
                                                             }
                                                         });
                                                     }
-
-
-                                                    Toast.makeText(getContext(), "Completed", Toast.LENGTH_SHORT).show();
-                                                    Intent intent=new Intent(getContext(),MainActivity.class);
-                                                    getActivity().finish();
-                                                    startActivity(intent);
-                                                    Toast.makeText(getContext(), "Login Successful!", Toast.LENGTH_SHORT).show();
                                                 }
                                                 else{
                                                     firebaseAuth.signOut();//we don't want any ambiguity
-                                                    Toast.makeText(getContext(), "Error Occured "+task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                                                    Toast.makeText(getContext(), "Error Occurred "+task.getException().getMessage(), Toast.LENGTH_LONG).show();
                                                 }
 
                                             }
@@ -245,7 +243,7 @@ public class SignUpFragment extends Fragment {
         closeBtn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getContext(), MainActivity.class);
+                Intent intent=new Intent(getContext(), MainActivity.class);//bypass [For Developmnet purposes only]
                 startActivity(intent);
                 getActivity().finish();
             }

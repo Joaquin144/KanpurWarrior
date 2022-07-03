@@ -86,9 +86,9 @@ public class ForgetPasswordFragment extends Fragment {
                             if (task.isSuccessful()) {
                                 progressBar.setVisibility(View.INVISIBLE);
                                 resetBtn.setEnabled(true);
-                                Toast.makeText(getContext(), "Email sent successfully", Toast.LENGTH_LONG).show();
+                                Toast.makeText(getContext(), "Email sent successfully! Do check spam if email is not visible", Toast.LENGTH_LONG).show();
                             } else {
-                                Toast.makeText(getContext(), "Some Error Occured "+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getContext(), "Some Error Occurred: "+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                                 emailEt.setText("RESET PASSWORD");
                             }
                         }
