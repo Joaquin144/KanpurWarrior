@@ -14,19 +14,18 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.kanpurwarrior.R;
-import com.example.kanpurwarrior.classes.CategoriesAdapter;
-import com.example.kanpurwarrior.classes.CategoriesModel;
-import com.example.kanpurwarrior.classes.HomePageAdapter;
-import com.example.kanpurwarrior.classes.HomePageModel;
-import com.example.kanpurwarrior.classes.HorizontalItemModel;
-import com.example.kanpurwarrior.classes.HorizontalProductAdapter;
-import com.example.kanpurwarrior.classes.ViewAllModel;
+import com.example.kanpurwarrior.classes.adapters.CategoriesAdapter;
+import com.example.kanpurwarrior.classes.models.CategoriesModel;
+import com.example.kanpurwarrior.classes.adapters.HomePageAdapter;
+import com.example.kanpurwarrior.classes.models.HomePageModel;
+import com.example.kanpurwarrior.classes.models.HorizontalItemModel;
+import com.example.kanpurwarrior.classes.models.ViewAllModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.example.kanpurwarrior.classes.HomePageModel.GRID;
-import static com.example.kanpurwarrior.classes.HomePageModel.HORIZONTAL;
+import static com.example.kanpurwarrior.classes.models.HomePageModel.GRID;
+import static com.example.kanpurwarrior.classes.models.HomePageModel.HORIZONTAL;
 
 public class HomeFragment extends Fragment {
 

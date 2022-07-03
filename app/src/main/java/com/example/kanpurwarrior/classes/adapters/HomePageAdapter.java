@@ -1,4 +1,4 @@
-package com.example.kanpurwarrior.classes;
+package com.example.kanpurwarrior.classes.adapters;
 
 import android.content.Intent;
 import android.content.res.ColorStateList;
@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -19,16 +18,18 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.kanpurwarrior.MainActivity;
 import com.example.kanpurwarrior.R;
 import com.example.kanpurwarrior.activities.ViewAllActivity;
+import com.example.kanpurwarrior.classes.models.HomePageModel;
+import com.example.kanpurwarrior.classes.models.HorizontalItemModel;
+import com.example.kanpurwarrior.classes.models.ViewAllModel;
 
 import java.util.List;
 
 import static com.example.kanpurwarrior.activities.ViewAllActivity.viewAllActivityList;
-import static com.example.kanpurwarrior.classes.HomePageModel.BANNER;
-import static com.example.kanpurwarrior.classes.HomePageModel.GRID;
-import static com.example.kanpurwarrior.classes.HomePageModel.HORIZONTAL;
+import static com.example.kanpurwarrior.classes.models.HomePageModel.BANNER;
+import static com.example.kanpurwarrior.classes.models.HomePageModel.GRID;
+import static com.example.kanpurwarrior.classes.models.HomePageModel.HORIZONTAL;
 
 public class HomePageAdapter extends RecyclerView.Adapter {
 
@@ -93,11 +94,11 @@ public class HomePageAdapter extends RecyclerView.Adapter {
 
         public HorizontalProductView(@NonNull View itemView) {
             super(itemView);
-            layoutTitleTv=itemView.findViewById(R.id.layoutTitle);
-            recyclerView=itemView.findViewById(R.id.horizontalScrollRecyclerView);
-            viewAllBtn=itemView.findViewById(R.id.viewAllBtn);
+            layoutTitleTv = itemView.findViewById(R.id.layoutTitle);
+            recyclerView = itemView.findViewById(R.id.horizontalScrollRecyclerView);
+            viewAllBtn = itemView.findViewById(R.id.viewAllBtn);
         }
-        public void setHorizontalData(String title,List<HorizontalItemModel> horizontalList,List<ViewAllModel> viewAllList)
+        public void setHorizontalData(String title, List<HorizontalItemModel> horizontalList, List<ViewAllModel> viewAllList)
         {
             layoutTitleTv.setText(title);
             LinearLayoutManager horizontalRvManager=new LinearLayoutManager(itemView.getContext());
@@ -112,7 +113,6 @@ public class HomePageAdapter extends RecyclerView.Adapter {
                 public void onClick(View v) {
                     //to do: take me to the new activity where full list is being shown to me
                     viewAllActivityList = viewAllList;
-                    Log.d("####","ViewAllActivityList ka size hai "+viewAllList.size());
                     Intent viewAllIntent=new Intent(itemView.getContext(), ViewAllActivity.class);
                     viewAllIntent.putExtra("layout_title",title);
                     itemView.getContext().startActivity(viewAllIntent);

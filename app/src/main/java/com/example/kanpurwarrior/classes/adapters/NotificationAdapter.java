@@ -1,4 +1,4 @@
-package com.example.kanpurwarrior.classes;
+package com.example.kanpurwarrior.classes.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.kanpurwarrior.R;
+import com.example.kanpurwarrior.classes.models.NotificationModelList;
 
 import java.util.List;
 

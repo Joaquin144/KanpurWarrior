@@ -1,4 +1,4 @@
-package com.example.kanpurwarrior.classes;
+package com.example.kanpurwarrior.classes.models;
 
 public class ViewAllModel {
 

@@ -13,10 +13,9 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.kanpurwarrior.R;
-import com.example.kanpurwarrior.classes.ViewAllAdapter;
-import com.example.kanpurwarrior.classes.ViewAllModel;
+import com.example.kanpurwarrior.classes.adapters.ViewAllAdapter;
+import com.example.kanpurwarrior.classes.models.ViewAllModel;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ViewAllActivity extends AppCompatActivity {

@@ -13,8 +13,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.kanpurwarrior.R;
-import com.example.kanpurwarrior.classes.NotificationAdapter;
-import com.example.kanpurwarrior.classes.NotificationModelList;
+import com.example.kanpurwarrior.classes.adapters.NotificationAdapter;
+import com.example.kanpurwarrior.classes.models.NotificationModelList;
 
 import java.util.ArrayList;
 import java.util.List;
