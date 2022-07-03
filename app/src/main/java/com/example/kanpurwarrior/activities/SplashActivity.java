@@ -33,9 +33,6 @@ public class SplashActivity extends AppCompatActivity {
         logoTv.setAnimation(bottomAnim);
         logoIv.setAnimation(topAnim);
 
-        //###### Following code is added by me
-        //Glide.with(getApplicationContext()).load("https://pixy.org/src/477/4774988.jpg").into(logoIv);
-
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

@@ -55,7 +55,8 @@ public class HomeFragment extends Fragment {
 
 
         //Scrollable Text code starts
-        scrollableTV.setText("Buy JEE,NEET,UPSC,SSC,AirForce,NDA,Railway group D,Bihar Staet board, UP Board, Rajasthan PCS , NDRF , Income tax all courses are available. Personal guidance availbele.  875446465461 , 46413213 , 74654541 , asufuisdgfuds, sfgsfiugsdf");
+        scrollableTV.setText("Buy JEE,NEET,UPSC,SSC,AirForce,NDA,Railway group D,Bihar State board, UP Board, Rajasthan PCS , NDRF , ISRO, DRDO, CAT, GMAT,TOEFL all courses are available. Personal guidance/mentorship available. Faculties Anish Vishnoi, Pankaj Srivastav, Ashish Aggarwal, Shravan Gupta, Ashran Katiyar, Abhishek Verma. ");
+        //Just so I don't forget their real names 🙃 Anish Srivastav, Ashish Vishnoi, Abhishek Gupta, Ashran verma, Pankaj Aggarwal, Shravan Katiyar
         scrollableTV.setSelected(true);
         //Scrollable Text code ends
 

@@ -11,7 +11,7 @@
         android:id="@+id/logoIv"
         android:layout_width="157dp"
         android:layout_height="151dp"
-        android:src="@drawable/logo"
+        android:src="@mipmap/ic_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
