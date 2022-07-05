@@ -3,15 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProjects/ImportantProjects/kanpur_warrior/app/src/main/res/drawable-v24/default_dot.xml" value="0.1295" />
+        <entry key="..\:/AndroidProjects/ImportantProjects/kanpur_warrior/app/src/main/res/drawable-v24/dot_selector.xml" value="0.1295" />
+        <entry key="..\:/AndroidProjects/ImportantProjects/kanpur_warrior/app/src/main/res/drawable-v24/selected_dot.xml" value="0.1295" />
+        <entry key="..\:/AndroidProjects/ImportantProjects/kanpur_warrior/app/src/main/res/drawable-v24/slider_background.xml" value="0.13" />
         <entry key="..\:/AndroidProjects/ImportantProjects/kanpur_warrior/app/src/main/res/drawable-v24/star_icon.xml" value="0.13" />
         <entry key="..\:/AndroidProjects/ImportantProjects/kanpur_warrior/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/AndroidProjects/ImportantProjects/kanpur_warrior/app/src/main/res/layout/activity_product_details.xml" value="0.2" />
+        <entry key="..\:/AndroidProjects/ImportantProjects/kanpur_warrior/app/src/main/res/layout/activity_product_details.xml" value="0.152" />
         <entry key="..\:/AndroidProjects/ImportantProjects/kanpur_warrior/app/src/main/res/layout/activity_splash.xml" value="0.2" />
         <entry key="..\:/AndroidProjects/ImportantProjects/kanpur_warrior/app/src/main/res/layout/activity_view_all.xml" value="0.25416666666666665" />
         <entry key="..\:/AndroidProjects/ImportantProjects/kanpur_warrior/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
         <entry key="..\:/AndroidProjects/ImportantProjects/kanpur_warrior/app/src/main/res/layout/grid_product_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/AndroidProjects/ImportantProjects/kanpur_warrior/app/src/main/res/layout/horizontal_product_item_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/AndroidProjects/ImportantProjects/kanpur_warrior/app/src/main/res/layout/horizontal_slider_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidProjects/ImportantProjects/kanpur_warrior/app/src/main/res/layout/product_description_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/AndroidProjects/ImportantProjects/kanpur_warrior/app/src/main/res/layout/ratings_layout.xml" value="0.264" />
         <entry key="..\:/AndroidProjects/ImportantProjects/kanpur_warrior/app/src/main/res/menu/main_activity_action_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/SecondTry/Va/KanpurWarrior/app/src/main/res/drawable/close_btn.xml" value="0.2703125" />
