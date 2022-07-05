@@ -1,5 +1,6 @@
 package com.example.kanpurwarrior.classes.adapters;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.kanpurwarrior.R;
+import com.example.kanpurwarrior.activities.ProductDetailsActivity;
 import com.example.kanpurwarrior.classes.models.HorizontalItemModel;
 
 import java.util.List;
@@ -65,6 +67,15 @@ public class HorizontalProductAdapter extends RecyclerView.Adapter<HorizontalPro
             subttitleTv.setText(subtitle);
             priceTv.setText(price);
             imageView.setImageDrawable(itemView.getResources().getDrawable(imageResource));
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //todo: Pass productId to ProductDetailsActivity through Intent
+                    Intent intent = new Intent(itemView.getContext(), ProductDetailsActivity.class);
+                    itemView.getContext().startActivity(intent);
+                }
+            });
         }
     }
 }

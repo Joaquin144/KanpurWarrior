@@ -6,4 +6,5 @@
 
     <string name="drawerOpen">Open</string>
     <string name="drawerClose">Close</string>
+    <string name="network_issue_message">Some Network Issue is there</string>
 </resources>

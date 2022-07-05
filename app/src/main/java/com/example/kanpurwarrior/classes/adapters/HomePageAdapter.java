@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.kanpurwarrior.R;
+import com.example.kanpurwarrior.activities.ProductDetailsActivity;
 import com.example.kanpurwarrior.activities.ViewAllActivity;
 import com.example.kanpurwarrior.classes.models.HomePageModel;
 import com.example.kanpurwarrior.classes.models.HorizontalItemModel;
@@ -150,6 +151,15 @@ public class HomePageAdapter extends RecyclerView.Adapter {
 
                 Glide.with(itemView.getContext()).load(itemView.getResources().getDrawable(gridList.get(x).getImageResource())).into(prodImage);
                 prodImage.setImageDrawable(itemView.getResources().getDrawable(gridList.get(x).getImageResource()));
+
+                //Set onClickListener on grid items and intent to ProductDetailsActivity by passing productId
+                gridLayout.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(itemView.getContext(), ProductDetailsActivity.class);
+                        itemView.getContext().startActivity(intent);
+                    }
+                });
 
             }
             viewAllGridBtn.setOnClickListener(new View.OnClickListener() {

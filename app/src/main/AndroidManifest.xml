@@ -11,7 +11,10 @@
         android:roundIcon="@mipmap/ic_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KanpurWarrior">
-        <activity android:name=".activities.ViewAllActivity"></activity>
+        <activity
+            android:name=".activities.ProductDetailsActivity"
+            android:exported="false" />
+        <activity android:name=".activities.ViewAllActivity" />
         <activity
             android:name=".activities.AuthenticationActivity"
             android:screenOrientation="portrait"
