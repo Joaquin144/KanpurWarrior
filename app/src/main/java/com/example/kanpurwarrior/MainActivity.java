@@ -145,6 +145,7 @@ public class MainActivity extends AppCompatActivity {
         transaction.commit();
     }
 
+    //If we want to show custom menu on top of our Action Bar then we need to override the following function in our Activity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();

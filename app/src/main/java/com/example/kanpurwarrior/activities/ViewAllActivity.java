@@ -50,9 +50,10 @@ public class ViewAllActivity extends AppCompatActivity {
         return true;
     }
 
+    //If your Activity has menu and to add click action on menu items you need to override this method
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if(item.getItemId()==android.R.id.home) {
+        if(item.getItemId()==android.R.id.home) {//Back Button ke liye
             finish();//jab action bar par built in back button press ho tab is activity ko finish kar do
             return true;
         }
